@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Harry Potter",
+        "gender": "male",
+        "house": "Gryffindor",
+        "bloodStatus": "half-blood"
+    },
+    {
+        "name": "Hermione Granger?",
+        "gender": "Female",
+        "house": "Gryffindor",
+        "bloodStatus": "Muggle-born"
+    },
+    {
+        "name": "Ron Weasley",
+        "gender": "male",
+        "house": "Gryffindor",
+        "bloodStatus": "Pure blood"
+    },
+    {
+        "name": "Lord Voldemort",
+        "gender": "male",
+        "house": "Slytherin",
+        "bloodStatus": "half-blood"
+    },
+    {
+        "name": "HBellatrix Black Lestrange",
+        "gender": "Female",
+        "house": "Slytherin",
+        "bloodStatus": "half-blood"
+    },
+    {
+        "name": "Harry Potter?",
+        "gender": "male",
+        "house": "Gryffindor",
+        "bloodStatus": "Pure blood"
+    }
+]
