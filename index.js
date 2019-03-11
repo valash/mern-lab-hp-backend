@@ -10,7 +10,7 @@ app.set('port', process.env.PORT || 3001);
 app.use(parser.json());
 // app.use(cors());
 
-app.get('/character', (req, res) => {
+app.get('/characters', (req, res) => {
     Character.find()
         .then(characters => {
             res.json(characters);
@@ -20,7 +20,7 @@ app.get('/character', (req, res) => {
         });
 });
 
-app.post('/character', (req, res) => {
+app.post('/characters', (req, res) => {
     Character.create(req.body)
         .then(character => {
             res.json(character);
@@ -30,7 +30,7 @@ app.post('/character', (req, res) => {
         });
 });
 
-app.get('/character/:id', (req, res) => {
+app.get('/characters/:id', (req, res) => {
     Character.findById(req.params.id)
         .then(character => {
             res.json(character);
