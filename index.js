@@ -7,8 +7,8 @@ const Character = mongoose.model('Character');
 const app = express();
 
 app.set('port', process.env.PORT || 3001);
-app.use(parser.json());
 // app.use(cors());
+app.use(parser.json());
 
 app.get('/characters', (req, res) => {
     Character.find()

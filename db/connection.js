@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 if (process.env.NODE_ENV == 'production') {
     mongoose.connect(process.env.DB_URL, { useMongoClient: true });
 } else {
-    mongoose.connect('mongodb://localhost/character', {
+    mongoose.connect('mongodb://localhost/characters', {
         useMongoClient: true
     });
 }
