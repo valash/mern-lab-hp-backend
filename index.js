@@ -1,13 +1,13 @@
 const express = require('express');
 const parser = require('body-parser');
-// const cors = require('cors');
+const cors = require('cors');
 const mongoose = require('./db/CharacterModels.js');
 const Character = mongoose.model('Character');
 
 const app = express();
 
 app.set('port', process.env.PORT || 3001);
-// app.use(cors());
+app.use(cors());
 app.use(parser.json());
 
 app.get('/characters', (req, res) => {
